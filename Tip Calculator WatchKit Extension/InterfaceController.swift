@@ -13,10 +13,9 @@ import Foundation
 class InterfaceController: WKInterfaceController {
 
     // interface items
-    
-    @IBOutlet weak var billAmountLabel: WKInterfaceLabel!
     @IBOutlet weak var tipPercentLabel: WKInterfaceLabel!
     @IBOutlet weak var tipButton: WKInterfaceButton!
+    @IBOutlet weak var BillLabel: WKInterfaceButton!
     
     //overall app vars
     let numberFormatter = NSNumberFormatter()
@@ -42,6 +41,7 @@ class InterfaceController: WKInterfaceController {
 
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
+        
         super.didDeactivate()
     }
     
@@ -67,7 +67,7 @@ class InterfaceController: WKInterfaceController {
         // setup the formatting
         numberFormatter.numberStyle = NSNumberFormatterStyle.CurrencyStyle
         
-        billAmountLabel.setText(numberFormatter.stringFromNumber(amount))
+        BillLabel.setTitle(numberFormatter.stringFromNumber(amount))
     }
     
     @IBAction func addBtnPressed() {

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--billDetailsScreen-->
         <scene sceneID="aCe-5S-5eR">
             <objects>
-                <controller animationDuration="1" id="4UN-ag-Vhw">
+                <controller identifier="billDetailsScreen" animationDuration="1" id="4UN-ag-Vhw" customClass="BillDetails" customModule="Tip_Calculator_WatchKit_Extension">
                     <items>
                         <group width="1" height="26" alignment="left" id="Yxy-63-QNa">
                             <items>
@@ -73,9 +73,6 @@
             <objects>
                 <controller identifier="mainScreen" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Tip_Calculator_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="$40.00" textAlignment="center" id="pa3-IT-H5V">
-                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
-                        </label>
                         <label alignment="center" verticalAlignment="bottom" text="Bill Amount" textAlignment="center" id="unY-NK-xdF">
                             <fontDescription key="font" type="system" weight="thin" pointSize="8"/>
                         </label>
@@ -96,8 +93,11 @@
                                         <action selector="addBtnPressed" destination="AgC-eL-Hgc" id="3Jw-3g-gjf"/>
                                     </connections>
                                 </button>
-                                <button width="62" alignment="left" verticalAlignment="bottom" title="$40.00" id="oge-WN-wt0">
+                                <button width="62" alignment="center" verticalAlignment="bottom" title="$40.00" id="oge-WN-wt0">
                                     <fontDescription key="font" type="system" weight="medium" pointSize="14"/>
+                                    <connections>
+                                        <segue destination="4UN-ag-Vhw" kind="modal" id="WSk-2l-buD"/>
+                                    </connections>
                                 </button>
                                 <button width="32" alignment="right" title="-" id="ySJ-hC-poK">
                                     <fontDescription key="font" type="system" pointSize="28"/>
@@ -109,7 +109,7 @@
                         </group>
                     </items>
                     <connections>
-                        <outlet property="billAmountLabel" destination="pa3-IT-H5V" id="aeL-83-Wyh"/>
+                        <outlet property="BillLabel" destination="oge-WN-wt0" id="hmy-8T-VX3"/>
                         <outlet property="tipButton" destination="uOt-qZ-F2F" id="BLy-ed-8lG"/>
                         <outlet property="tipPercentLabel" destination="0fn-cI-sEv" id="IW0-pB-FS2"/>
                     </connections>

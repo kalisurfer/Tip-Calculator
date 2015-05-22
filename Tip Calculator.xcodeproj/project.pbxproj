@@ -19,6 +19,7 @@
 		395B23E41B0D13800063FC4A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395B23E21B0D13800063FC4A /* Interface.storyboard */; };
 		395B23E61B0D13800063FC4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395B23E51B0D13800063FC4A /* Images.xcassets */; };
 		395B23E91B0D13800063FC4A /* Tip Calculator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 395B23D11B0D137F0063FC4A /* Tip Calculator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		397C58C11B0F908D006DFE6D /* BillDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 397C58C01B0F908D006DFE6D /* BillDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		395B23E11B0D13800063FC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		395B23E31B0D13800063FC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		395B23E51B0D13800063FC4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		397C58C01B0F908D006DFE6D /* BillDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				395B23D51B0D137F0063FC4A /* InterfaceController.swift */,
 				395B23D71B0D137F0063FC4A /* Images.xcassets */,
 				395B23D31B0D137F0063FC4A /* Supporting Files */,
+				397C58C01B0F908D006DFE6D /* BillDetails.swift */,
 			);
 			path = "Tip Calculator WatchKit Extension";
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				395B23D61B0D137F0063FC4A /* InterfaceController.swift in Sources */,
+				397C58C11B0F908D006DFE6D /* BillDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
